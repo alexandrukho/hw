@@ -18,26 +18,7 @@ $opel["opel"] = [
     "year" => "2013"
 ];
 
-$cars = [
-    "bmw" => [
-        "model" => "X5",
-        "speed" => "120",
-        "doors" => "5",
-        "year" => "2015"
-    ],
-    "toyota" => [
-        "model" => "Camry",
-        "speed" => "210",
-        "doors" => "4",
-        "year" => "2011"
-    ],
-    "opel" => [
-        "model" => "Astra",
-        "speed" => "220",
-        "doors" => "3",
-        "year" => "2013"
-    ]
-];
+$cars = array_merge($bmw, $toyota, $opel);
 
 foreach ($cars as $brand => $keys) {
     echo "<br> <span>Car:</span> $brand <br>";
