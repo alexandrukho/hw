@@ -8,7 +8,7 @@ for ($rows = 1; $rows <= 10; $rows++) {
     for ($cols = 1; $cols <= 10; $cols++) {
         if ($rows % 2 == 0 && $cols % 2 == 0) {
             echo "<td>" . "(" . $rows * $cols . ")" . "</td>";
-        } else if ($rows % 2 == 1 && $cols % 2 == 1) {
+        } elseif ($rows % 2 == 1 && $cols % 2 == 1) {
             echo "<td>" . "[" . $rows * $cols . "]" . "</td>";
         } else {
             echo "<td>" . $rows * $cols . "</td>";
