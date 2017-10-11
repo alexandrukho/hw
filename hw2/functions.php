@@ -9,9 +9,7 @@ function task1($arrStr, $bool = false)
             return $arrStr = implode(', ', $arrStr);
         }
     }
-}
-
-;
+};
 function task2($arrOfNumbers, $sign)
 {
     $sum = $arrOfNumbers[0];
@@ -36,7 +34,6 @@ function task2($arrOfNumbers, $sign)
     }
     return $sum;
 };
-
 function task3($sign, ...$args)
 {
     $argList = func_get_args();
@@ -60,6 +57,24 @@ function task3($sign, ...$args)
         }
     }
     return $sum;
-}
-
-;
+};
+function task4(int $numRows, int $numCols)
+{
+    echo "<table>";
+    echo "<tbody>";
+    for ($rows = 1; $rows <= $numRows; $rows++) {
+        echo "<tr style='text-align: center;'>";
+        for ($cols = 1; $cols <= $numCols; $cols++) {
+            if ($rows % 2 == 0 && $cols % 2 == 0) {
+                echo "<td>" . $rows * $cols . "</td>";
+            } elseif ($rows % 2 == 1 && $cols % 2 == 1) {
+                echo "<td>" . $rows * $cols . "</td>";
+            } else {
+                echo "<td>" . $rows * $cols . "</td>";
+            }
+        }
+        echo "</tr>";
+    }
+    echo "</tbody>";
+    echo "</table>";
+};
