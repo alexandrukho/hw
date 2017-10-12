@@ -103,6 +103,12 @@ function task5_1($checkPalindrome)
 }
 
 ;
+function task6()
+{
+    echo date('d.m.Y h:m');
+    echo "<br>";
+    echo strtotime('24 February 2016');
+};
 function task7($string, $search = null, $replace = null)
 {
     $string = str_replace('К', '', $string);

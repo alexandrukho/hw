@@ -12,6 +12,8 @@ echo "<br>";
 echo task4(10, 10);
 echo task5(task5_1('Анна'));
 echo "<br>";
+echo task6();
+echo "<br>";
 echo task7('Карл у Клары украл Кораллы');
 echo "<br>";
 echo task8("RX packets:9132 errors:0 dropped:0 :) overruns:0 frame:0. ");
