@@ -164,3 +164,8 @@ function task9($readFile)
 }
 
 ;
+function task10($createFile)
+{
+    $create = fopen($createFile, 'c');
+    fwrite($create, '“Hello again!”');
+}
