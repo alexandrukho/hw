@@ -11,3 +11,7 @@ echo task3('*', 5, 2.5);
 echo "<br>";
 echo task4(10, 10);
 echo task5(task5_1('Анна'));
+echo "<br>";
+echo task7('Карл у Клары украл Кораллы');
+echo "<br>";
+

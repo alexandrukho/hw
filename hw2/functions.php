@@ -9,7 +9,9 @@ function task1($arrStr, $bool = false)
             return $arrStr = implode(', ', $arrStr);
         }
     }
-};
+}
+
+;
 function task2($arrOfNumbers, $sign)
 {
     $sum = $arrOfNumbers[0];
@@ -33,7 +35,9 @@ function task2($arrOfNumbers, $sign)
         return "Error";
     }
     return $sum;
-};
+}
+
+;
 function task3($sign, ...$args)
 {
 
@@ -58,7 +62,9 @@ function task3($sign, ...$args)
         }
     }
     return $sum;
-};
+}
+
+;
 function task4(int $numColumns, int $numRows)
 {
     echo "<table>";
@@ -79,15 +85,30 @@ function task4(int $numColumns, int $numRows)
     echo "</tbody>";
     echo "</table>";
 
-};
+}
+
+;
 function task5($func)
 {
     return $func;
-};
+}
+
+;
 function task5_1($checkPalindrome)
 {
     $palindrome = str_replace(" ", "", mb_strtolower($checkPalindrome));
     $palindromeArray = preg_split("//u", $palindrome, -1, PREG_SPLIT_NO_EMPTY);
     $palindromeReverse = array_reverse($palindromeArray);
     return ($palindromeArray === $palindromeReverse) ? "true" : "false";
-};
+}
+
+;
+function task7($string, $search = null, $replace = null)
+{
+    $string = str_replace('К', '', $string);
+    $string = str_replace($search, $replace, $string);
+    return $string;
+}
+
+;
+
